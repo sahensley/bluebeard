@@ -19,8 +19,11 @@ modules:
   - type: rpm-ostree
     repos:
     install:
-      - virt-manager
       - foot
+      - libvirt-dbus
+      - strace
+      - virt-install
+      - virt-manager
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
