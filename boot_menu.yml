@@ -1,9 +1,9 @@
 ublue_variants:
   - label: sahensley/bluebeard-gnome
-    ks: /kickstart/bluebeard-gnome.ks
+    ks: /kickstart/ublue-os.ks
     flavors:
       - label: sahensley/bluebeard-gnome
   - label: sahensley/bluebeard-gnome-framework
-    ks: /kickstart/bluebeard-gnome-framework.ks
+    ks: /kickstart/ublue-os.ks
     flavors:
       - label: sahensley/bluebeard-gnome-framework
