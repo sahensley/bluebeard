@@ -53,8 +53,12 @@ echo "Writing /etc/systemd/system/swtpm-workaround.service"
     echo ''
 } > /etc/systemd/system/swtpm-workaround.service
 
+# Reload services
+echo "Reloading systemctl daemons"
+systemctl daemon-reload
+
 # Enable service to start on boot
 echo "Setting swtpm-workaround.service to start on boot"
 systemctl enable swtpm-workaround.service
 
-echo "fix-virtmanager-swtpm.sh is complete!"
+echo "fix-virtmanager-swtpm.sh done. Changes will take effect on reboot!"
