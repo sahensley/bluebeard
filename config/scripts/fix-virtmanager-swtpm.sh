@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+set -x
 
 # Install SELinux policies to make sure swtpm_exec_t exists
 echo "Installing swtpm.pp SELinux policy"
