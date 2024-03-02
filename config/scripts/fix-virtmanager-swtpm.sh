@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-set -x
 
 # Install SELinux policies to make sure swtpm_exec_t exists
 echo "Installing swtpm.pp SELinux policy"
@@ -54,12 +53,8 @@ echo "Writing /etc/systemd/system/swtpm-workaround.service"
     echo ''
 } > /etc/systemd/system/swtpm-workaround.service
 
-# Reload services
-echo "Reloading systemctl daemons"
-systemctl daemon-reload
-
 # Enable service to start on boot
 echo "Setting swtpm-workaround.service to start on boot"
 systemctl enable swtpm-workaround.service
 
-echo "Done! Changes will take effect on reboot!"
+echo "fix-virtmanager-swtpm.sh is complete!"
