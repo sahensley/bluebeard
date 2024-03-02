@@ -38,7 +38,7 @@ echo "Writing /etc/systemd/system/swtpm-workaround.service"
     echo '[Service]'
     echo 'Type=oneshot'
     echo '# Copy if it does not exist'
-    echo 'ExecStartPre=/usr/bin/bash -c "[ -x /usr/local/bin/.swtpm ] || /usr/bin/cp /usr/bin/swtpm /usr/loc'
+    echo 'ExecStartPre=/usr/bin/bash -c "[ -x /usr/local/bin/.swtpm ] || /usr/bin/cp /usr/bin/swtpm /usr/local/bin/.swtpm"'
     echo '# This is faster than using .mount unit. Also allows for the previous line/cleanup'
     echo 'ExecStartPre=/usr/bin/mount --bind /usr/local/bin/.swtpm /usr/bin/swtpm'
     echo '# Fix SELinux label'
