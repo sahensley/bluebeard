@@ -1,5 +1,5 @@
 # vim: set ft=make :
 
-# Fix SELinxu permissions for swtpm
+# Fix libvirt / virt-manager VM creation swtpm SELinux label issue
 fix-virtmanager-swtpm:
     sudo /usr/share/bluebeard/scripts/fix-virtmanager-swtpm.sh
