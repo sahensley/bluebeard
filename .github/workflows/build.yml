@@ -22,8 +22,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - recipe-gnome.yml
-          - recipe-gnome-framework.yml
+          - recipes/general/recipe-silverblue-main.yml
+          - recipes/framework/recipe-silverblue-framework.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image

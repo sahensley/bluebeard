@@ -1,0 +1,11 @@
+type: rpm-ostree
+repos:
+install:
+  - foot
+  - libvirt-dbus
+  - strace
+  - virt-install
+  - virt-manager
+  - virt-viewer
+  - wl-clipboard
+
