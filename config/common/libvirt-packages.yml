@@ -1,0 +1,9 @@
+type: rpm-ostree
+repos:
+install:
+  - ansible-collection-community-libvirt
+  - libvirt-dbus
+  - virt-install
+  - virt-manager
+  - virt-viewer
+
