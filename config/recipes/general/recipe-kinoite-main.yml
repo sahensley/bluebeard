@@ -1,0 +1,13 @@
+name: bluebeard-gnome
+description: A BlueBuild customized Fedora Atomic Desktop
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 39 # latest is also supported if you want new updates ASAP
+
+modules:
+  - from-file: common/kinoite-packages.yml
+  - from-file: common/common-packages.yml
+  - from-file: common/remove-firefox.yml
+  - from-file: common/common-files.yml
+  - type: signing
+  - type: yafti
+

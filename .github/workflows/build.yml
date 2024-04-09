@@ -23,7 +23,9 @@ jobs:
         recipe:
           # !! Add your recipes here
           - recipes/general/recipe-silverblue-main.yml
+          - recipes/general/recipe-kinoite-main.yml
           - recipes/framework/recipe-silverblue-framework.yml
+          - recipes/framework/recipe-kinoite-framework.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
