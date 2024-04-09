@@ -9,5 +9,5 @@ modules:
   - from-file: common/remove-firefox.yml
   - from-file: common/common-files.yml
   - type: signing
-  # - type: yafti
+  - type: yafti
 
