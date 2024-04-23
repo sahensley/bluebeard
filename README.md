@@ -8,10 +8,12 @@ The following images are available:
 
 - bluebeard-gnome
 - bluebeard-gnome-framework
+- bluebeard-kde
+- bluebeard-kde-framework
 
 The following labels are available:
 
-- 39
+- 40
 - latest
 
 ## Installation

@@ -1,7 +1,7 @@
 name: bluebeard-gnome-framework
 description: A BlueBuild customized Fedora Atomic Desktop
 base-image: ghcr.io/ublue-os/silverblue-framework
-image-version: 39 # latest is also supported if you want new updates ASAP
+image-version: 40 # latest is also supported if you want new updates ASAP
 
 modules:
   - from-file: common/silverblue-packages.yml
