@@ -5,8 +5,11 @@ install:
   - ansible-collection-community-general
   - ansible-collection-containers-podman
   - ansible-core-doc
+  - difftastic
+  - fd-find
   - foot
+  - ripgrep
   - strace
-  - wl-clipboard
   - vim-X11
+  - wl-clipboard
 
