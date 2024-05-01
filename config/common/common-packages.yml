@@ -9,6 +9,7 @@ install:
   - fd-find
   - foot
   - ripgrep
+  - syncthing
   - strace
   - vim-X11
   - wl-clipboard
