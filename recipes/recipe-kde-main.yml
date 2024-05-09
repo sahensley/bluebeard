@@ -1,0 +1,13 @@
+name: bluebeard-kde
+description: A BlueBuild customized Fedora Atomic Desktop
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+modules:
+  - from-file: image_configs/kinoite-packages.yml
+  - from-file: image_configs/common-packages.yml
+  - from-file: image_configs/libvirt-packages.yml
+  - from-file: image_configs/remove-firefox.yml
+  - from-file: image_configs/common-files.yml
+  - type: signing
+
