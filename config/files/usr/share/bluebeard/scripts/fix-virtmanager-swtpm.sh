@@ -5,6 +5,8 @@ set -euo pipefail
 # Install SELinux policies to make sure swtpm_exec_t exists
 echo "Installing swtpm.pp SELinux policy"
 semodule -i /usr/share/selinux/packages/swtpm.pp > /dev/null 2>&1
+echo "Installing swtpm_libvirt.pp SELinux policy"
+semodule -i /usr/share/selinux/packages/swtpm_libvirt.pp > /dev/null 2>&1
 echo "Installing swtpm_svirt.pp SELinux policy"
 semodule -i /usr/share/selinux/packages/swtpm_svirt.pp > /dev/null 2>&1
 
