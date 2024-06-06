@@ -8,9 +8,10 @@ install:
   - difftastic
   - fd-find
   - foot
+  - papirus-icon-theme
   - ripgrep
-  - syncthing
   - strace
+  - syncthing
   - vim-X11
   - wl-clipboard
 
