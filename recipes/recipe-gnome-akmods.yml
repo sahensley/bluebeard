@@ -1,4 +1,4 @@
-name: bluebeard-gnome
+name: bluebeard-gnome-akmods
 description: A BlueBuild customized Fedora Atomic Desktop
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 40 # latest is also supported if you want new updates ASAP
@@ -9,5 +9,6 @@ modules:
   - from-file: image_configs/libvirt-packages.yml
   - from-file: image_configs/remove-firefox.yml
   - from-file: image_configs/common-files.yml
+  - from-file: image_configs/common-akmods.yml
   - type: signing
 
