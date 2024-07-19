@@ -23,7 +23,9 @@ jobs:
         recipe:
           # !! Add your recipes here
           - recipe-gnome-main.yml
+          - recipe-gnome-akmods.yml
           - recipe-kde-main.yml
+          - recipe-kde-akmods.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
