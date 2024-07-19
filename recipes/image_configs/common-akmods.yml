@@ -1,0 +1,4 @@
+type: akmods
+base: main
+install:
+  - openrazer
